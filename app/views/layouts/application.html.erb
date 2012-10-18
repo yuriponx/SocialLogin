@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SocialLogin</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div>
+    <% if current_omniuser %>
+      <%= current_omniuser.name %>さん <%= link_to "ログアウト" ,logout_path %>
+    <% else %>
+      <%= link_to "Twitterでlogin","/auth/twitter" %>
+      <%= link_to "facebookでlogin", "/auth/facebook" %>
+    <% end %>
+</div>
+<%= yield %>
+</body>
+</html>
