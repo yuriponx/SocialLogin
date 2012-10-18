@@ -5,11 +5,18 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do  
+  gem "pg"  
+  gem 'therubyracer-heroku'  
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
