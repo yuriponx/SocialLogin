@@ -5,11 +5,11 @@ Twitter & Facebook login for Ruby on Rails web application.
 == Getting Started
 1. Edit "/config/initializers/omniauth.rb"
 
-Twitter
-You should fill "Consumer key" and "Consumer secret".
+   Twitter
+   You should fill "Consumer key" and "Consumer secret".
 
-Facebook
-You should fill "App ID" and "App Secret". 
+   Facebook
+   You should fill "App ID" and "App Secret". 
 
 2. Edit "/config/initializers/secret_token.rb"
 
