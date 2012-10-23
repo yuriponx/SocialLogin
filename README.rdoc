@@ -1,6 +1,6 @@
 == Social Login
-   Twitter & Facebook login for Ruby on Rails web application.
-   ツイッターとフェイスブックでログインするRailsアプリのサンプル。
+Twitter & Facebook login for Ruby on Rails web application.
+ツイッターとフェイスブックでログインするRailsアプリのサンプル。
 
 == Getting Started
 1. Edit "/config/initializers/omniauth.rb"
